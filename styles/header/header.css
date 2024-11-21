@@ -1,6 +1,5 @@
 .header {
     position: relative;
-    min-block-size: var(--block-size, 668px);
     padding-inline:  var(--layout-padding, 10px);
     padding-block-start: var(--layout-padding, 10px);
     margin-block-end: var(--header-margin-block-end, 40px);

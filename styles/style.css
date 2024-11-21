@@ -4,14 +4,14 @@
 
 .page {
     background-color: var(--page-bg-cl, #000028);
-    position:sticky;
+    background-attachment: fixed;
+    position: sticky;
     /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
   }
   
   @media (width >= 768px) {
     .header {
       display: grid;
-      min-block-size: var(--block-size, 1024px);
       grid-template-columns: 1fr 1fr 1fr 1fr;
     }
 
@@ -24,16 +24,12 @@
     .header__title {
       grid-column: 1/ -1;
       margin: 0 -20px;
-      padding-block-end: 162px;
+      padding-block-end: 16px;
     }
 
     .header__text {
       grid-column: 3 / -1;
       margin-block-end: 183px;
-    }
-  
-    .case {
-      padding-block-end: var(--case-margin-block-end, 80px);
     }
 
     .case-1 {
@@ -90,14 +86,6 @@
   }
   
   @media (width >= 1024px) {
-    .header {
-      min-block-size: var(--block-size, 768px);
-    }
-  
-    .header__title {
-      padding-block-end: 127px;
-    }
-
     .header__theme-menu {
       justify-content: center;
       grid-column: 2 / 4;
@@ -109,6 +97,14 @@
       flex-direction: row;
   }
   
+    .header__title {
+      padding-block-end: 124px;
+    }
+
+    .header__text {
+      margin-block-end: 134px;
+    }
+
     .case-2 div {
       gap: var(--grid-gap, 20px);
       grid-row: 2;

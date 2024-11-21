@@ -2,6 +2,10 @@
     padding-inline: var(--layout-padding, 10px);
 }
 
+.case:not(:last-child) {
+    margin-block-end: var(--case-margin-block-end, 50px);
+}
+
 .case__title {
     font-weight: var(--font-bold, 700);
     text-align: left;
@@ -42,9 +46,18 @@
     font-weight: var(--font-light, 400);
 }
 
+.case-4 {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+}
+
+.img_title {
+    margin-block-end: 0;
+  }
+
 .image {
     width: 100%;
     height: 100%;
     object-fit: cover;
-
 }
