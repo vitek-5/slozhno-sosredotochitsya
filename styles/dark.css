@@ -5,15 +5,15 @@
 */
 
 .page.theme_dark {
-  --bg-image: url('/images/cover-image-dark.png');
-  --focus-color: #DB00FF;
+  --bg-image: url("/images/cover-image-dark.png");
+  --focus-color: #db00ff;
   --page-bg-cl: #000028;
-  --accent-color: #FF0070;
-  --nav-color: #FF0070;
-  --nav-hover-color: #FF007066;
-  --card-title-color: #FF0070;
+  --accent-color: #ff0070;
+  --nav-color: #ff0070;
+  --nav-hover-color: #ff007066;
+  --card-title-color: #ff0070;
   --title-color: #000028;
-  --text-color: #F1B2CE;
+  --text-color: #f1b2ce;
   /* сохраните этот селектор в приведённом виде.
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя

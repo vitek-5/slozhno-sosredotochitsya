@@ -1,63 +1,75 @@
 .content {
-    padding-inline: var(--layout-padding, 10px);
+  padding-inline: var(--layout-padding, 10px);
 }
 
 .case:not(:last-child) {
-    margin-block-end: var(--case-margin-block-end, 50px);
+  margin-block-end: var(--case-margin-block-end, 50px);
 }
 
 .case__title {
-    font-weight: var(--font-bold, 700);
-    text-align: left;
-    font-size: inherit;
-    color: var(--card-title-color, #FF0070);
-    margin-block-end: var(--card-margin-block-end, 20px);
+  font-weight: var(--font-bold, 700);
+  text-align: left;
+  font-size: inherit;
+  color: var(--card-title-color, #ff0070);
+  margin-block-end: var(--card-margin-block-end, 20px);
 }
 
 .card:not(:last-child) {
-    margin-block-end: var(--card-margin-block-end, 20px);
+  margin-block-end: var(--card-margin-block-end, 20px);
 }
 
 #big-margin {
-    margin-block-end: 20px;
+  margin-block-end: 20px;
 }
 
 .card__title {
-    margin-block-end: 10px;
+  margin-block-end: 10px;
 }
 
 .card__text {
-    color: var(--text-color, #F1B2CE);
+  color: var(--text-color, #f1b2ce);
 }
 
 .card__text a {
-    text-decoration: none;
-    text-shadow: 2px  2px 0 var( --accent-color, #FF0070);
+  text-decoration: none;
+  text-shadow: 2px 2px 0 var(--accent-color, #ff0070);
 }
 
+.card__text a:hover {
+    border-bottom: 1px solid var(--text-color, #f1b2ce);
+  }
+  
+  .card__text a:focus {
+    outline: none;
+  }
+  
+  .card__text a:focus-visible {
+    outline: 1px solid var(--text-color, #f1b2ce);
+  }
+
 .title-decor {
-    background-color: var(--accent-color, #FF0070);
-    color: var(--title-color, #000028);
-    font-weight: var(--font-bold, 700);
-    font-size: 18px;
+  background-color: var(--accent-color, #ff0070);
+  color: var(--title-color, #000028);
+  font-weight: var(--font-bold, 700);
+  font-size: 18px;
 }
 
 .font-weight__light {
-    font-weight: var(--font-light, 400);
+  font-weight: var(--font-light, 400);
 }
 
 .case-4 {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 10px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
 }
 
 .img_title {
-    margin-block-end: 0;
-  }
+  margin-block-end: 0;
+}
 
 .image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
