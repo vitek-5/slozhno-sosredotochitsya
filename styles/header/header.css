@@ -1,8 +1,10 @@
 .header {
+    block-size: 100vh;
     position: relative;
     padding-inline:  var(--layout-padding, 10px);
     padding-block-start: var(--layout-padding, 10px);
-    margin-block-end: var(--header-margin-block-end, 40px);
+    padding-block-end: 66px;
+    margin-block-end: 40px;
 }
 
 .decorated-zone::before {
@@ -41,7 +43,6 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: fixed;
 }
 
 .rec {

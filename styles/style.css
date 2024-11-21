@@ -13,6 +13,8 @@
     .header {
       display: grid;
       grid-template-columns: 1fr 1fr 1fr 1fr;
+      padding-block-end: 183px;
+      margin-block-end: 60px;
     }
 
     .header__theme-menu {
@@ -24,12 +26,11 @@
     .header__title {
       grid-column: 1/ -1;
       margin: 0 -20px;
-      padding-block-end: 16px;
+      padding-block-end: 162px;
     }
 
     .header__text {
       grid-column: 3 / -1;
-      margin-block-end: 183px;
     }
 
     .case-1 {
@@ -86,6 +87,11 @@
   }
   
   @media (width >= 1024px) {
+    .header {
+      padding-block-end: 134px;
+      margin-block-end: 60px;
+    }
+
     .header__theme-menu {
       justify-content: center;
       grid-column: 2 / 4;
@@ -98,11 +104,7 @@
   }
   
     .header__title {
-      padding-block-end: 124px;
-    }
-
-    .header__text {
-      margin-block-end: 134px;
+      padding-block-end: 114px;
     }
 
     .case-2 div {

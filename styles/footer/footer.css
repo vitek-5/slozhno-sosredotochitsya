@@ -1,6 +1,6 @@
 .footer {
+    block-size: 100vh;
     position: relative;
-    block-size: var(--block-size);
     padding-inline:  var(--layout-padding, 10px);
     text-align: center;
     align-content: center;
