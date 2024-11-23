@@ -16,9 +16,10 @@
 
 @media (width >= 768px) {
   .header {
-    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
     grid-template-columns: 1fr 1fr;
     margin-block-end: 60px;
+    padding-block-end: 183px;
   }
 
   .header, .footer {
@@ -26,19 +27,17 @@
   }
 
   .header__theme-menu {
-    margin-block-start: 172px;
-    margin-block-end: 175px;
+    align-self: self-end;
     grid-column: 2;
   }
 
   .header__title {
+    align-self: self-end;
     grid-column: 1 / -1;
     margin: 0 -20px;
   }
 
 .header__text {
-  margin-block-start: 162px;
-  margin-block-end: 183px;
   grid-column: 2;
 }
 
@@ -104,7 +103,6 @@
   .header__theme-menu {
     justify-content: center;
     margin: 0;
-    margin-block-end: 293px;
     grid-column: 1 / -1;
     align-self: self-start;
   }
@@ -113,9 +111,9 @@
     flex-direction: row;
   }
 
-  .header__text {
-    margin-block-start: 129px;
-    margin-block-end: 134px;
+  .header {
+    margin-block-end: 60px;
+    padding-block-end: 134px;
   }
 
   .case__attention article {
