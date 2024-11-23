@@ -1,9 +1,9 @@
 .page.theme_light {
-  --bg-image: url("/images/cover-image-light.png");
+  --bg-image: url("../images/cover-image-light.png");
   --focus-color: #ffc2e6;
   --page-bg-cl: #fff1f7;
   --accent-color: #ff8dcb;
-  --button-color: #353430;
+  --nav-color: #353430;
   --card-title-color: #353430;
   --title-color: #353430;
   --text-color: #353430;
@@ -15,11 +15,11 @@
 
 @media (prefers-color-scheme: light) {
   :root {
-    --bg-image: url("/images/cover-image-light.png");
+    --bg-image: url("../images/cover-image-light.png");
     --focus-color: #ffc2e6;
     --page-bg-cl: #fff1f7;
     --accent-color: #ff8dcb;
-    --button-color: #353430;
+    --nav-color: #353430;
     --card-title-color: #353430;
     --title-color: #353430;
     --text-color: #353430;

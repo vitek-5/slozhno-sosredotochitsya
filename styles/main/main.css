@@ -18,12 +18,12 @@
   margin-block-end: var(--card-margin-block-end, 20px);
 }
 
-#big-margin {
-  margin-block-end: 20px;
-}
-
 .card__title {
   margin-block-end: 10px;
+}
+
+.big-margin {
+  margin-block-end: 20px;
 }
 
 .card__text {
@@ -58,10 +58,11 @@
   font-weight: var(--font-light, 400);
 }
 
-.case-4 {
+.case__images {
   display: grid;
   grid-template-columns: 1fr;
   gap: 10px;
+  padding-block-end: 40px;
 }
 
 .img_title {

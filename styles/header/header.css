@@ -1,10 +1,12 @@
 .header {
+  min-block-size: 668px;
   block-size: 100vh;
   position: relative;
   padding-inline: var(--layout-padding, 10px);
-  padding-block-start: var(--layout-padding, 10px);
+  padding-block: var(--layout-padding, 10px);
   padding-block-end: 66px;
   margin-block-end: 40px;
+  display: grid;
 }
 
 .decorated-zone::before {
@@ -13,8 +15,8 @@
   content: "";
   width: 25px;
   height: 25px;
-  border-right: 1px solid #ff0070;
-  border-top: 1px solid #ff0070;
+  border-right: 1px solid var(--nav-color, #ff0070);
+  border-top: 1px solid var(--nav-color, #ff0070);
   right: var(--layout-padding, 10px);
   top: var(--layout-padding, 10px);
 }
@@ -25,24 +27,10 @@
   content: "";
   width: 25px;
   height: 25px;
-  border-left: 1px solid #ff0070;
-  border-bottom: 1px solid #ff0070;
+  border-left: 1px solid var(--nav-color, #ff0070);
+  border-bottom: 1px solid var(--nav-color, #ff0070);
   bottom: var(--layout-padding, 10px);
   left: var(--layout-padding, 10px);
-}
-
-.page::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -1;
-  inline-size: 100%;
-  block-size: 100%;
-  background-image: var(--bg-image, url("/images/cover-image-dark.png"));
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 .rec {
@@ -55,24 +43,21 @@
   right: calc(var(--layout-padding, 10px) + 9px);
 }
 
-.theme_dark .rec {
-  display: flex;
-}
-
-.rec_circle {
+.rec::after {
+  content: '';
   border: none;
   height: 9px;
   width: 9px;
-  background-color: var(--button-color, #ff0070);
-  box-shadow: 0px 0px 4px 2px var(--button-color, #ff0070);
+  background-color: var(--nav-color, #ff0070);
+  box-shadow: 0px 0px 4px 2px var(--nav-color, #ff0070);
   border-radius: 50%;
 }
 
 .header__theme-menu {
-  padding-block-start: 65px;
   display: flex;
   justify-content: right;
-  padding-block-end: 65px;
+  margin-block-start: 65px;
+  align-self: self-start;
 }
 
 .header__theme-menu-list {
@@ -89,9 +74,10 @@
   background-color: transparent;
   border: none;
   text-transform: lowercase;
-  color: var(--button-color, #ff0070);
-  padding-inline: 13px;
-  padding-block: 1px;
+  color: var(--nav-color, #ff0070);
+  block-size: 26px;
+  inline-size: 70px;
+  line-height: 18px;
 }
 
 .header__theme-menu-button:hover {
@@ -113,7 +99,7 @@
 
 .header__title {
   font-size: var(
-    --header-font-size,
+    --focus-font-size,
     clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem)
   );
   font-weight: var(--font-bold, 700);
@@ -121,5 +107,9 @@
   text-align: left;
   color: var(--focus-color, #db00ff);
   text-shadow: 4px 4px 0 var(--accent-color, #ff0070);
-  padding-block-end: 55px;
+  align-self: self-end;
+}
+
+.header__text {
+  align-self: self-end;
 }

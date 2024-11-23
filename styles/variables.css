@@ -15,10 +15,9 @@
   --card-margin-block-end: 20px;
   --grid-gap: 20px;
 
-  --header-font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
-  --footer-font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  --focus-font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
 
-  --bg-image: url("/images/cover-image-dark.png");
+  --bg-image: url("../images/cover-image-dark.png");
 
   --font-bold: 700;
   --font-light: 400;
@@ -30,7 +29,6 @@
     --header-margin-block-end: 60px;
     --case-margin-block-end: 80px;
 
-    --header-font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
-    --footer-font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+    --focus-font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem) ;
   }
 }
