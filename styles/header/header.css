@@ -6,7 +6,6 @@
   padding-block: var(--layout-padding, 10px);
   padding-block-end: 66px;
   margin-block-end: 40px;
-  display: grid;
 }
 
 .decorated-zone::before {
@@ -57,7 +56,8 @@
   display: flex;
   justify-content: right;
   margin-block-start: 65px;
-  align-self: self-start;
+  margin-block-end: 65px;
+  
 }
 
 .header__theme-menu-list {
@@ -106,8 +106,7 @@
   line-height: 95.7px;
   text-align: left;
   color: var(--focus-color, #db00ff);
-  text-shadow: 4px 4px 0 var(--accent-color, #ff0070);
-  align-self: self-end;
+  margin-block-end: 55px;
 }
 
 .header__text {
