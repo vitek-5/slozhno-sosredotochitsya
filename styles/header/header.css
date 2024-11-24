@@ -4,9 +4,9 @@
   position: relative;
   padding-inline: var(--layout-padding, 10px);
   padding-block: var(--layout-padding, 10px);
-  padding-block-end: 66px;
   margin-block-end: 40px;
   display: grid;
+  grid-template-rows: 1fr min-content 1fr;
 }
 
 .decorated-zone::before {
@@ -45,7 +45,7 @@
 
 .rec::after {
   content: '';
-  border: none;
+  border: 1px solid var(--nav-color, #ff0070);
   height: 9px;
   width: 9px;
   background-color: var(--nav-color, #ff0070);
@@ -105,9 +105,7 @@
   line-height: 95.7px;
   text-align: left;
   color: var(--focus-color, #db00ff);
-  margin-block-end: -15px;
-  align-self: self-end;
-
+  text-shadow: 4px 4px var(--focus-shadow-color, #ff0070);
 }
 
 .header__text {

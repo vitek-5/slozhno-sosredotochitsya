@@ -1,6 +1,7 @@
 :root {
   --main-font-family: "IBM Plex Mono", sans-serif;
   --focus-color: #db00ff;
+  --focus-shadow-color: #ff0070;
   --page-bg-cl: #000028;
   --accent-color: #ff0070;
   --nav-color: #ff0070;
